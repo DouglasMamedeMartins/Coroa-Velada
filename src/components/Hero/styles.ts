@@ -22,11 +22,14 @@ export const ContainerTitle = styled.div`
 export const TitleHero = styled.h1`
   color: #ffffff;
   text-transform: uppercase;
+  font-size: 3.2rem;
 `
 
 export const HeroName = styled.h3`
-  color: #999;
   font-weight: 300;
+  font-size: 2rem;
+  opacity: 0.48;
+  color: #ffffff;
 `
 
 export const Divisor = styled.div`
@@ -59,4 +62,43 @@ export const Divisor = styled.div`
 
 
 
-export const ImageHero = styled.div``
+export const ImageHero = styled.img`
+  padding: 7px 0;
+`
+
+
+export const ContainerDescription = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+export const Description = styled.h3`
+  color: #ffffff;
+  font-size: 2.4rem;
+  opacity: 0.54;
+  text-transform: uppercase;
+`
+
+export const Genealogia = styled.p`
+  font-size: 2rem;
+  color: #ffffff;
+  opacity: 0.27;
+`
+
+export const InformationXp = styled.span`
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #ffffff;
+  background-color: #1c1c1c;
+  padding: 7px 28px;
+  border-radius: 12px;
+  border: 2px solid #0b8800;
+`
+
+export const XP = styled.small`
+  font-size: 1.6rem;
+`
+
+export const NumberXp = styled.span``
