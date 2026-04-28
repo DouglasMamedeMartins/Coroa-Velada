@@ -39,7 +39,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-size: 1.6rem;
     background-color: #1c1c1c;
-    width: 360px;
     margin: auto;
     font-family: 'Gimlet Micro', sans-serif;
   }

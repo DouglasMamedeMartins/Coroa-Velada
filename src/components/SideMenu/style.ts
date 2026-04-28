@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerSideMenu = styled.div<{ open: boolean }>`
   background-color: #0c0c0c;
   width: 312px;
-
+  padding: 12px;
   position: fixed;
   transform: ${({ open }) => open ? "translateX(0)" : "translateX(-100%)"};
   opacity: ${({ open }) => open ? "1" : "0"};
