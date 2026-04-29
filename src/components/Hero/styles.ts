@@ -8,7 +8,7 @@ export const Container = styled.div`
   border-radius: 25px;
   width: 328px;
   margin: 28px auto;
-
+  padding: 10px;
 `
 
 export const ContainerTitle = styled.div`
@@ -19,7 +19,7 @@ export const ContainerTitle = styled.div`
 `
 
 
-export const TitleHero = styled.h1`
+export const Title = styled.h1`
   color: #ffffff;
   text-transform: uppercase;
   font-size: 3.2rem;
@@ -36,6 +36,7 @@ export const Divisor = styled.div`
   width: 266px;
   height: 2px;
   margin-bottom: 7px;
+  margin-top: 7px;
   background-color: #999;
   position: relative;
   opacity: 0.3;
@@ -63,7 +64,10 @@ export const Divisor = styled.div`
 
 
 export const ImageHero = styled.img`
-  padding: 7px 0;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0px 0px 4px #ccc;
 `
 
 
@@ -102,3 +106,11 @@ export const XP = styled.small`
 `
 
 export const NumberXp = styled.span``
+
+
+export const ContainerPontos = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 18px 0;
+`
