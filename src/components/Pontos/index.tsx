@@ -5,22 +5,26 @@ import {
   Ponto,
   InformacaoContainer,
   ContainerNumeros,
+  Divisoria,
 } from "./styles";
 
 interface PontosProps {
-  title: string;
-  score: number;
-  maxScore: number;
+  title?: string;
+  score?: number | string;
+  maxScore?: number;
+  divisor?: string;
+  span?: number;
 }
 
-function Pontos({ title, score, maxScore }: PontosProps) {
+function Pontos({ title, score, maxScore, divisor, span }: PontosProps) {
   return (
-    <Ponto>
+    <Ponto span={span}>
       <InformacaoContainer>
         <TituloPontos>{title}</TituloPontos>
         <ContainerNumeros>
-          <NumeroPontos>{score}</NumeroPontos>
-          <PontosMaximo>/{maxScore}</PontosMaximo>
+          <NumeroPontos isExpanded={span === 2}>{score}</NumeroPontos>
+          <Divisoria>{divisor}</Divisoria>
+          <PontosMaximo>{maxScore}</PontosMaximo>
         </ContainerNumeros>
       </InformacaoContainer>
     </Ponto>

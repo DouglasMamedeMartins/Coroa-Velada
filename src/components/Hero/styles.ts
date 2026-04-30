@@ -117,3 +117,12 @@ export const ContainerPontos = styled.div`
   gap: 12px;
   margin: 18px 0;
 `
+
+export const TituloSangue = styled.h2`
+  text-align: center;
+  font-size: 2.4rem;
+  color: #ffffff;
+  font-weight: 500;
+  width: 158px;
+  text-transform: uppercase;
+`
