@@ -13,7 +13,7 @@ import {
   Title,
   XP,
 } from "./styles";
-import heroImage from "../../assets/images/Carmilla.svg";
+import heroImage from "../../assets/images/morgana.jfif";
 import Pontos from "../Pontos";
 
 function Hero() {
@@ -21,14 +21,14 @@ function Hero() {
     <>
       <Container>
         <ContainerTitle>
-          <Title>Carmilla</Title>
-          <HeroName>Rebecca Miranda</HeroName>
+          <Title>MORGANA</Title>
+          <HeroName>Douglas Mamede</HeroName>
         </ContainerTitle>
         <Divisor></Divisor>
         <ImageHero src={heroImage}></ImageHero>
         <ContainerDescription>
-          <Description>Ventrue</Description>
-          <Genealogia>8th Geração</Genealogia>
+          <Description>Demon</Description>
+          <Genealogia>Demonio Caido</Genealogia>
         </ContainerDescription>
         <InformationXp>
           <NumberXp>16</NumberXp>
@@ -37,7 +37,7 @@ function Hero() {
       </Container>
       <Container>
         <Title>STATUS</Title>
-        <Divisor></Divisor>
+        <Divisor style={{ width: 291 }}></Divisor>
         <ContainerPontos>
           <Pontos title="Fome" score={4} maxScore={6} />
           <Pontos title="Humanidade" score={3} maxScore={5} />

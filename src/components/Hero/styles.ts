@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,7 +66,7 @@ export const Divisor = styled.div`
 export const ImageHero = styled.img`
   margin: 10px 0;
   border: 1px solid #ccc;
-  border-radius: 12px;
+  border-radius: 23px;
   box-shadow: 0px 0px 4px #ccc;
 `
 
