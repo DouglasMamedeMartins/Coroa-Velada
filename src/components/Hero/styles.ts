@@ -68,6 +68,9 @@ export const ImageHero = styled.img`
   border: 1px solid #ccc;
   border-radius: 23px;
   box-shadow: 0px 0px 4px #ccc;
+  width: 100%;
+  height: 321px;
+  object-fit: cover;
 `
 
 
