@@ -17,11 +17,12 @@ import {
 import heroImage from "../../assets/images/morgana.jfif";
 import Pontos from "../Pontos";
 import { Ball, BallPointContainer } from "../Pontos/styles";
+import Atributos from "../Atributos";
 
 function Hero() {
   return (
     <>
-      <Container>
+      <Container id="visao-geral">
         <ContainerTitle>
           <Title>MORGANA</Title>
           <HeroName>Douglas Mamede</HeroName>
@@ -37,7 +38,8 @@ function Hero() {
           <XP>XP</XP>
         </InformationXp>
       </Container>
-      <Container>
+
+      <Container id="status">
         <Title>STATUS</Title>
         <Divisor style={{ width: 291 }}></Divisor>
         <ContainerPontos>
@@ -60,7 +62,7 @@ function Hero() {
         </ContainerPontos>
       </Container>
 
-      <Container>
+      <Container id="potencia-de-sangue">
         <TituloSangue>Potência de Sangue</TituloSangue>
         <Divisor style={{ width: 291 }}></Divisor>
         <BallPointContainer>
@@ -87,6 +89,7 @@ function Hero() {
           />
         </ContainerPontos>
       </Container>
+      <Atributos />
     </>
   );
 }

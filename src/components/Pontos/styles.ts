@@ -4,6 +4,7 @@ export const Ponto = styled.div<{ span?: number }>`
   width: 100%;
   border: 3px solid #720000;
   border-radius: 19px;
+  padding: 5px;
   background-color: #1c1c1c;
   grid-column: span ${({ span }) => span || 1};  
 `

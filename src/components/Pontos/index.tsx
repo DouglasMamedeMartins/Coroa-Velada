@@ -9,8 +9,8 @@ import {
 } from "./styles";
 
 interface PontosProps {
-  title?: string;
-  score?: number | string;
+  title: string;
+  score: number | string;
   maxScore?: number;
   divisor?: string;
   span?: number;

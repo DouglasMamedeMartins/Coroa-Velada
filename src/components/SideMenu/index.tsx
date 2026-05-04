@@ -16,61 +16,35 @@ interface SideMenuProps {
   open: boolean;
 }
 
+const menuItems = [
+  { icon: userIcon, label: "Visão Geral", href: "#visao-geral" },
+  { icon: statusIcon, label: "Status", href: "#status" },
+  {
+    icon: potenciaSangueIcon,
+    label: "Potência de Sangue",
+    href: "#potencia-de-sangue",
+  },
+  { icon: atributosIcon, label: "Atributos" },
+  { icon: conhecimentosIcon, label: "Conhecimentos" },
+  { icon: periciasIcon, label: "Perícias" },
+  { icon: talentosIcon, label: "Talentos" },
+  { icon: rituaisIcon, label: "Rituais" },
+  { icon: disciplinasIcon, label: "Disciplinas" },
+  { icon: possesIcon, label: "Posses" },
+  { icon: objetivosIcon, label: "Objetivos" },
+  { icon: moralidadeIcon, label: "Moralidade" },
+  { icon: antedecedentesIcon, label: "Antecedentes" },
+];
+
 function SideMenu({ open }: SideMenuProps) {
   return (
     <ContainerSideMenu open={open}>
-      <ContainerOption>
-        <Image src={userIcon} />
-        <Title>Visão Geral</Title>
-      </ContainerOption>
-      <ContainerOption>
-        <Image src={statusIcon} />
-        <Title>Status</Title>
-      </ContainerOption>
-      <ContainerOption>
-        <Image src={potenciaSangueIcon} />
-        <Title>Potência de Sangue</Title>
-      </ContainerOption>
-      <ContainerOption>
-        <Image src={atributosIcon} />
-        <Title>Atributos</Title>
-      </ContainerOption>
-      <ContainerOption>
-        <Image src={conhecimentosIcon} />
-        <Title>Conhecimentos</Title>
-      </ContainerOption>
-      <ContainerOption>
-        <Image src={periciasIcon} />
-        <Title>Perícias</Title>
-      </ContainerOption>
-      <ContainerOption>
-        <Image src={talentosIcon} />
-        <Title>Talentos</Title>
-      </ContainerOption>
-      <ContainerOption>
-        <Image src={rituaisIcon} />
-        <Title>Rituais</Title>
-      </ContainerOption>
-      <ContainerOption>
-        <Image src={disciplinasIcon} />
-        <Title>Disciplinas</Title>
-      </ContainerOption>
-      <ContainerOption>
-        <Image src={possesIcon} />
-        <Title>Posses</Title>
-      </ContainerOption>
-      <ContainerOption>
-        <Image src={objetivosIcon} />
-        <Title>Objetivos</Title>
-      </ContainerOption>
-      <ContainerOption>
-        <Image src={moralidadeIcon} />
-        <Title>Moralidade</Title>
-      </ContainerOption>
-      <ContainerOption>
-        <Image src={antedecedentesIcon} />
-        <Title>Antecedentes</Title>
-      </ContainerOption>
+      {menuItems.map((item) => (
+        <ContainerOption key={item.label}>
+          <Image src={item.icon} />
+          <Title href={item.href}>{item.label}</Title>
+        </ContainerOption>
+      ))}
     </ContainerSideMenu>
   );
 }

@@ -19,9 +19,34 @@ export const ContainerOption = styled.div`
 
 `
 
-export const Image = styled.img``
+export const Image = styled.img`
+  transition: transform 0.3s ease;
+
+   &:hover {
+    transform: scale(1.2);
+  }
+`
 
 
 export const Title = styled.a`
   color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #ccc;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 `

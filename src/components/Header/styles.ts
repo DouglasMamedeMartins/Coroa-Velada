@@ -19,5 +19,9 @@ export const MenuHamburguer = styled.img<{ isMenuOpen: boolean }>`
 
 
 export const Logo = styled.img`
-margin: 0 auto;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+}
 `
