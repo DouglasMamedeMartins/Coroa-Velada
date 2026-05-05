@@ -50,7 +50,7 @@ const talentos = [
 
 function Habilidades({ titulo }: HabilidadesProps) {
   return (
-    <Container>
+    <Container id={titulo}>
       <ContainerTitulo>
         <TitleAtributos>{titulo}</TitleAtributos>
         <ArrowIcon src={arrowIcon} alt=""></ArrowIcon>
