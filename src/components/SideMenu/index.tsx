@@ -24,7 +24,7 @@ const menuItems = [
     label: "Potência de Sangue",
     href: "#potencia-de-sangue",
   },
-  { icon: atributosIcon, label: "Atributos" },
+  { icon: atributosIcon, label: "Atributos", href: "#atributos" },
   { icon: conhecimentosIcon, label: "Conhecimentos" },
   { icon: periciasIcon, label: "Perícias" },
   { icon: talentosIcon, label: "Talentos" },

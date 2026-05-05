@@ -18,6 +18,7 @@ import heroImage from "../../assets/images/morgana.jfif";
 import Pontos from "../Pontos";
 import { Ball, BallPointContainer } from "../Pontos/styles";
 import Atributos from "../Atributos";
+import Habilidades from "../Habilidades";
 
 function Hero() {
   return (
@@ -90,6 +91,9 @@ function Hero() {
         </ContainerPontos>
       </Container>
       <Atributos />
+      <Habilidades titulo="Conhecimento" />
+      <Habilidades titulo="Pericia" />
+      <Habilidades titulo="Talentos" />
     </>
   );
 }

@@ -5,7 +5,7 @@ import TipoAtributo from "./TipoAtributo";
 function Atributos() {
   return (
     <>
-      <Container>
+      <Container id="atributos">
         <TitleAtributos>Atributos</TitleAtributos>
         <Divisor />
         <TipoAtributo
