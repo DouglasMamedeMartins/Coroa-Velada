@@ -13,7 +13,7 @@ function Header() {
           src={isMenuOpen ? "images/x.svg" : "/images/MenuHamburguer.svg"}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         ></MenuHamburguer>
-        <Logo src="/images/logo.svg" />
+        <Logo src="/images/Logo.svg" />
       </HeaderContainer>
       <SideMenu open={isMenuOpen} />
     </>
