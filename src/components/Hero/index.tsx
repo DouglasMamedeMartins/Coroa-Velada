@@ -49,7 +49,7 @@ function Hero() {
     <>
       <Container id="visao-geral">
         <ContainerTitle>
-          <Title>MORGANA</Title>
+          <Title>TESTE</Title>
           <HeroName>Douglas Mamede</HeroName>
         </ContainerTitle>
         <Divisor></Divisor>
